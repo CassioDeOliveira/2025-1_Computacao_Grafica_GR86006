@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/_deps/glm-subbuild/CMakeFiles/glm-populate"
+		},
+		{
+			"file" : "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/_deps/glm-subbuild/CMakeFiles/glm-populate.rule"
+		},
+		{
+			"file" : "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/_deps/glm-subbuild/CMakeFiles/glm-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glm-populate"
+		],
+		"name" : "glm-populate"
+	}
+}

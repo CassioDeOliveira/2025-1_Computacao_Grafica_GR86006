@@ -1,0 +1,3 @@
+C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate.dir
+C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/_deps/glfw-subbuild/CMakeFiles/edit_cache.dir
+C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/_deps/glfw-subbuild/CMakeFiles/rebuild_cache.dir

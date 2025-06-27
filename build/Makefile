@@ -200,6 +200,97 @@ SpherePhong/fast:
 .PHONY : SpherePhong/fast
 
 #=============================================================================
+# Target rules for targets named HelloCube_M2
+
+# Build rule for target.
+HelloCube_M2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 HelloCube_M2
+.PHONY : HelloCube_M2
+
+# fast build rule for target.
+HelloCube_M2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HelloCube_M2.dir\build.make CMakeFiles/HelloCube_M2.dir/build
+.PHONY : HelloCube_M2/fast
+
+#=============================================================================
+# Target rules for targets named CuboTex_M3
+
+# Build rule for target.
+CuboTex_M3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CuboTex_M3
+.PHONY : CuboTex_M3
+
+# fast build rule for target.
+CuboTex_M3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CuboTex_M3.dir\build.make CMakeFiles/CuboTex_M3.dir/build
+.PHONY : CuboTex_M3/fast
+
+#=============================================================================
+# Target rules for targets named CubosPhong_M4
+
+# Build rule for target.
+CubosPhong_M4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CubosPhong_M4
+.PHONY : CubosPhong_M4
+
+# fast build rule for target.
+CubosPhong_M4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CubosPhong_M4.dir\build.make CMakeFiles/CubosPhong_M4.dir/build
+.PHONY : CubosPhong_M4/fast
+
+#=============================================================================
+# Target rules for targets named Camera_M5
+
+# Build rule for target.
+Camera_M5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Camera_M5
+.PHONY : Camera_M5
+
+# fast build rule for target.
+Camera_M5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Camera_M5.dir\build.make CMakeFiles/Camera_M5.dir/build
+.PHONY : Camera_M5/fast
+
+#=============================================================================
+# Target rules for targets named Trajetoria_M6
+
+# Build rule for target.
+Trajetoria_M6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Trajetoria_M6
+.PHONY : Trajetoria_M6
+
+# fast build rule for target.
+Trajetoria_M6/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trajetoria_M6.dir\build.make CMakeFiles/Trajetoria_M6.dir/build
+.PHONY : Trajetoria_M6/fast
+
+#=============================================================================
+# Target rules for targets named Cena_GB
+
+# Build rule for target.
+Cena_GB: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Cena_GB
+.PHONY : Cena_GB
+
+# fast build rule for target.
+Cena_GB/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_GB.dir\build.make CMakeFiles/Cena_GB.dir/build
+.PHONY : Cena_GB/fast
+
+#=============================================================================
+# Target rules for targets named buffer
+
+# Build rule for target.
+buffer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 buffer
+.PHONY : buffer
+
+# fast build rule for target.
+buffer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\buffer.dir\build.make CMakeFiles/buffer.dir/build
+.PHONY : buffer/fast
+
+#=============================================================================
 # Target rules for targets named uninstall
 
 # Build rule for target.
@@ -259,6 +350,13 @@ common/glad.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hello3D.dir\build.make CMakeFiles/Hello3D.dir/common/glad.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TriangleTex.dir\build.make CMakeFiles/TriangleTex.dir/common/glad.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpherePhong.dir\build.make CMakeFiles/SpherePhong.dir/common/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HelloCube_M2.dir\build.make CMakeFiles/HelloCube_M2.dir/common/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CuboTex_M3.dir\build.make CMakeFiles/CuboTex_M3.dir/common/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CubosPhong_M4.dir\build.make CMakeFiles/CubosPhong_M4.dir/common/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Camera_M5.dir\build.make CMakeFiles/Camera_M5.dir/common/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trajetoria_M6.dir\build.make CMakeFiles/Trajetoria_M6.dir/common/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_GB.dir\build.make CMakeFiles/Cena_GB.dir/common/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\buffer.dir\build.make CMakeFiles/buffer.dir/common/glad.c.obj
 .PHONY : common/glad.c.obj
 
 common/glad.i: common/glad.c.i
@@ -269,6 +367,13 @@ common/glad.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hello3D.dir\build.make CMakeFiles/Hello3D.dir/common/glad.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TriangleTex.dir\build.make CMakeFiles/TriangleTex.dir/common/glad.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpherePhong.dir\build.make CMakeFiles/SpherePhong.dir/common/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HelloCube_M2.dir\build.make CMakeFiles/HelloCube_M2.dir/common/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CuboTex_M3.dir\build.make CMakeFiles/CuboTex_M3.dir/common/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CubosPhong_M4.dir\build.make CMakeFiles/CubosPhong_M4.dir/common/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Camera_M5.dir\build.make CMakeFiles/Camera_M5.dir/common/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trajetoria_M6.dir\build.make CMakeFiles/Trajetoria_M6.dir/common/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_GB.dir\build.make CMakeFiles/Cena_GB.dir/common/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\buffer.dir\build.make CMakeFiles/buffer.dir/common/glad.c.i
 .PHONY : common/glad.c.i
 
 common/glad.s: common/glad.c.s
@@ -279,7 +384,110 @@ common/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hello3D.dir\build.make CMakeFiles/Hello3D.dir/common/glad.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TriangleTex.dir\build.make CMakeFiles/TriangleTex.dir/common/glad.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpherePhong.dir\build.make CMakeFiles/SpherePhong.dir/common/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HelloCube_M2.dir\build.make CMakeFiles/HelloCube_M2.dir/common/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CuboTex_M3.dir\build.make CMakeFiles/CuboTex_M3.dir/common/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CubosPhong_M4.dir\build.make CMakeFiles/CubosPhong_M4.dir/common/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Camera_M5.dir\build.make CMakeFiles/Camera_M5.dir/common/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trajetoria_M6.dir\build.make CMakeFiles/Trajetoria_M6.dir/common/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_GB.dir\build.make CMakeFiles/Cena_GB.dir/common/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\buffer.dir\build.make CMakeFiles/buffer.dir/common/glad.c.s
 .PHONY : common/glad.c.s
+
+src/Camera_M5.obj: src/Camera_M5.cpp.obj
+.PHONY : src/Camera_M5.obj
+
+# target to build an object file
+src/Camera_M5.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Camera_M5.dir\build.make CMakeFiles/Camera_M5.dir/src/Camera_M5.cpp.obj
+.PHONY : src/Camera_M5.cpp.obj
+
+src/Camera_M5.i: src/Camera_M5.cpp.i
+.PHONY : src/Camera_M5.i
+
+# target to preprocess a source file
+src/Camera_M5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Camera_M5.dir\build.make CMakeFiles/Camera_M5.dir/src/Camera_M5.cpp.i
+.PHONY : src/Camera_M5.cpp.i
+
+src/Camera_M5.s: src/Camera_M5.cpp.s
+.PHONY : src/Camera_M5.s
+
+# target to generate assembly for a file
+src/Camera_M5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Camera_M5.dir\build.make CMakeFiles/Camera_M5.dir/src/Camera_M5.cpp.s
+.PHONY : src/Camera_M5.cpp.s
+
+src/Cena_GB.obj: src/Cena_GB.cpp.obj
+.PHONY : src/Cena_GB.obj
+
+# target to build an object file
+src/Cena_GB.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_GB.dir\build.make CMakeFiles/Cena_GB.dir/src/Cena_GB.cpp.obj
+.PHONY : src/Cena_GB.cpp.obj
+
+src/Cena_GB.i: src/Cena_GB.cpp.i
+.PHONY : src/Cena_GB.i
+
+# target to preprocess a source file
+src/Cena_GB.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_GB.dir\build.make CMakeFiles/Cena_GB.dir/src/Cena_GB.cpp.i
+.PHONY : src/Cena_GB.cpp.i
+
+src/Cena_GB.s: src/Cena_GB.cpp.s
+.PHONY : src/Cena_GB.s
+
+# target to generate assembly for a file
+src/Cena_GB.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_GB.dir\build.make CMakeFiles/Cena_GB.dir/src/Cena_GB.cpp.s
+.PHONY : src/Cena_GB.cpp.s
+
+src/CuboTex_M3.obj: src/CuboTex_M3.cpp.obj
+.PHONY : src/CuboTex_M3.obj
+
+# target to build an object file
+src/CuboTex_M3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CuboTex_M3.dir\build.make CMakeFiles/CuboTex_M3.dir/src/CuboTex_M3.cpp.obj
+.PHONY : src/CuboTex_M3.cpp.obj
+
+src/CuboTex_M3.i: src/CuboTex_M3.cpp.i
+.PHONY : src/CuboTex_M3.i
+
+# target to preprocess a source file
+src/CuboTex_M3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CuboTex_M3.dir\build.make CMakeFiles/CuboTex_M3.dir/src/CuboTex_M3.cpp.i
+.PHONY : src/CuboTex_M3.cpp.i
+
+src/CuboTex_M3.s: src/CuboTex_M3.cpp.s
+.PHONY : src/CuboTex_M3.s
+
+# target to generate assembly for a file
+src/CuboTex_M3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CuboTex_M3.dir\build.make CMakeFiles/CuboTex_M3.dir/src/CuboTex_M3.cpp.s
+.PHONY : src/CuboTex_M3.cpp.s
+
+src/CubosPhong_M4.obj: src/CubosPhong_M4.cpp.obj
+.PHONY : src/CubosPhong_M4.obj
+
+# target to build an object file
+src/CubosPhong_M4.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CubosPhong_M4.dir\build.make CMakeFiles/CubosPhong_M4.dir/src/CubosPhong_M4.cpp.obj
+.PHONY : src/CubosPhong_M4.cpp.obj
+
+src/CubosPhong_M4.i: src/CubosPhong_M4.cpp.i
+.PHONY : src/CubosPhong_M4.i
+
+# target to preprocess a source file
+src/CubosPhong_M4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CubosPhong_M4.dir\build.make CMakeFiles/CubosPhong_M4.dir/src/CubosPhong_M4.cpp.i
+.PHONY : src/CubosPhong_M4.cpp.i
+
+src/CubosPhong_M4.s: src/CubosPhong_M4.cpp.s
+.PHONY : src/CubosPhong_M4.s
+
+# target to generate assembly for a file
+src/CubosPhong_M4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CubosPhong_M4.dir\build.make CMakeFiles/CubosPhong_M4.dir/src/CubosPhong_M4.cpp.s
+.PHONY : src/CubosPhong_M4.cpp.s
 
 src/Hello3D.obj: src/Hello3D.cpp.obj
 .PHONY : src/Hello3D.obj
@@ -305,6 +513,30 @@ src/Hello3D.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hello3D.dir\build.make CMakeFiles/Hello3D.dir/src/Hello3D.cpp.s
 .PHONY : src/Hello3D.cpp.s
 
+src/HelloCube_M2.obj: src/HelloCube_M2.cpp.obj
+.PHONY : src/HelloCube_M2.obj
+
+# target to build an object file
+src/HelloCube_M2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HelloCube_M2.dir\build.make CMakeFiles/HelloCube_M2.dir/src/HelloCube_M2.cpp.obj
+.PHONY : src/HelloCube_M2.cpp.obj
+
+src/HelloCube_M2.i: src/HelloCube_M2.cpp.i
+.PHONY : src/HelloCube_M2.i
+
+# target to preprocess a source file
+src/HelloCube_M2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HelloCube_M2.dir\build.make CMakeFiles/HelloCube_M2.dir/src/HelloCube_M2.cpp.i
+.PHONY : src/HelloCube_M2.cpp.i
+
+src/HelloCube_M2.s: src/HelloCube_M2.cpp.s
+.PHONY : src/HelloCube_M2.s
+
+# target to generate assembly for a file
+src/HelloCube_M2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HelloCube_M2.dir\build.make CMakeFiles/HelloCube_M2.dir/src/HelloCube_M2.cpp.s
+.PHONY : src/HelloCube_M2.cpp.s
+
 src/SpherePhong.obj: src/SpherePhong.cpp.obj
 .PHONY : src/SpherePhong.obj
 
@@ -328,6 +560,30 @@ src/SpherePhong.s: src/SpherePhong.cpp.s
 src/SpherePhong.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SpherePhong.dir\build.make CMakeFiles/SpherePhong.dir/src/SpherePhong.cpp.s
 .PHONY : src/SpherePhong.cpp.s
+
+src/Trajetoria_M6.obj: src/Trajetoria_M6.cpp.obj
+.PHONY : src/Trajetoria_M6.obj
+
+# target to build an object file
+src/Trajetoria_M6.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trajetoria_M6.dir\build.make CMakeFiles/Trajetoria_M6.dir/src/Trajetoria_M6.cpp.obj
+.PHONY : src/Trajetoria_M6.cpp.obj
+
+src/Trajetoria_M6.i: src/Trajetoria_M6.cpp.i
+.PHONY : src/Trajetoria_M6.i
+
+# target to preprocess a source file
+src/Trajetoria_M6.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trajetoria_M6.dir\build.make CMakeFiles/Trajetoria_M6.dir/src/Trajetoria_M6.cpp.i
+.PHONY : src/Trajetoria_M6.cpp.i
+
+src/Trajetoria_M6.s: src/Trajetoria_M6.cpp.s
+.PHONY : src/Trajetoria_M6.s
+
+# target to generate assembly for a file
+src/Trajetoria_M6.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trajetoria_M6.dir\build.make CMakeFiles/Trajetoria_M6.dir/src/Trajetoria_M6.cpp.s
+.PHONY : src/Trajetoria_M6.cpp.s
 
 src/TriangleTex.obj: src/TriangleTex.cpp.obj
 .PHONY : src/TriangleTex.obj
@@ -353,6 +609,30 @@ src/TriangleTex.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TriangleTex.dir\build.make CMakeFiles/TriangleTex.dir/src/TriangleTex.cpp.s
 .PHONY : src/TriangleTex.cpp.s
 
+src/buffer.obj: src/buffer.cpp.obj
+.PHONY : src/buffer.obj
+
+# target to build an object file
+src/buffer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\buffer.dir\build.make CMakeFiles/buffer.dir/src/buffer.cpp.obj
+.PHONY : src/buffer.cpp.obj
+
+src/buffer.i: src/buffer.cpp.i
+.PHONY : src/buffer.i
+
+# target to preprocess a source file
+src/buffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\buffer.dir\build.make CMakeFiles/buffer.dir/src/buffer.cpp.i
+.PHONY : src/buffer.cpp.i
+
+src/buffer.s: src/buffer.cpp.s
+.PHONY : src/buffer.s
+
+# target to generate assembly for a file
+src/buffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\buffer.dir\build.make CMakeFiles/buffer.dir/src/buffer.cpp.s
+.PHONY : src/buffer.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -367,23 +647,51 @@ help:
 	@echo ... rebuild_cache
 	@echo ... uninstall
 	@echo ... update_mappings
+	@echo ... Camera_M5
+	@echo ... Cena_GB
+	@echo ... CuboTex_M3
+	@echo ... CubosPhong_M4
 	@echo ... Hello3D
+	@echo ... HelloCube_M2
 	@echo ... SpherePhong
+	@echo ... Trajetoria_M6
 	@echo ... TriangleTex
+	@echo ... buffer
 	@echo ... glfw
 	@echo ... glm
 	@echo ... common/glad.obj
 	@echo ... common/glad.i
 	@echo ... common/glad.s
+	@echo ... src/Camera_M5.obj
+	@echo ... src/Camera_M5.i
+	@echo ... src/Camera_M5.s
+	@echo ... src/Cena_GB.obj
+	@echo ... src/Cena_GB.i
+	@echo ... src/Cena_GB.s
+	@echo ... src/CuboTex_M3.obj
+	@echo ... src/CuboTex_M3.i
+	@echo ... src/CuboTex_M3.s
+	@echo ... src/CubosPhong_M4.obj
+	@echo ... src/CubosPhong_M4.i
+	@echo ... src/CubosPhong_M4.s
 	@echo ... src/Hello3D.obj
 	@echo ... src/Hello3D.i
 	@echo ... src/Hello3D.s
+	@echo ... src/HelloCube_M2.obj
+	@echo ... src/HelloCube_M2.i
+	@echo ... src/HelloCube_M2.s
 	@echo ... src/SpherePhong.obj
 	@echo ... src/SpherePhong.i
 	@echo ... src/SpherePhong.s
+	@echo ... src/Trajetoria_M6.obj
+	@echo ... src/Trajetoria_M6.i
+	@echo ... src/Trajetoria_M6.s
 	@echo ... src/TriangleTex.obj
 	@echo ... src/TriangleTex.i
 	@echo ... src/TriangleTex.s
+	@echo ... src/buffer.obj
+	@echo ... src/buffer.i
+	@echo ... src/buffer.s
 .PHONY : help
 
 

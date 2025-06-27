@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\buffer.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\buffer.dir/objects.a @CMakeFiles\buffer.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\buffer.dir/objects.a -Wl,--no-whole-archive -o buffer.exe -Wl,--out-implib,libbuffer.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\buffer.dir\linkLibs.rsp

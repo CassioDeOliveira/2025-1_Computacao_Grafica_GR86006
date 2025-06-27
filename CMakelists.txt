@@ -47,7 +47,13 @@ set(EXERCISES
     Hello3D
     TriangleTex
     SpherePhong
-   
+    HelloCube_M2
+    CuboTex_M3
+    CubosPhong_M4
+    Camera_M5
+    Trajetoria_M6
+    Cena_GB
+    buffer
 )
 
 add_compile_options(-Wno-pragmas)

@@ -36,6 +36,90 @@
   "output": "CMakeFiles/SpherePhong.dir/common/glad.c.obj"
 },
 {
+  "directory": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/HelloCube_M2.dir/includes_CXX.rsp -g -std=gnu++17 -Wno-pragmas -o CMakeFiles\\HelloCube_M2.dir\\src\\HelloCube_M2.cpp.obj -c C:\\Users\\cassi\\OneDrive\\Documentos\\Desafios_Unisinos\\Computacao_grafica\\2025-1_Computacao_Grafica_GR86006\\src\\HelloCube_M2.cpp",
+  "file": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/src/HelloCube_M2.cpp",
+  "output": "CMakeFiles/HelloCube_M2.dir/src/HelloCube_M2.cpp.obj"
+},
+{
+  "directory": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/HelloCube_M2.dir/includes_C.rsp -g -Wno-pragmas -o CMakeFiles\\HelloCube_M2.dir\\common\\glad.c.obj -c C:\\Users\\cassi\\OneDrive\\Documentos\\Desafios_Unisinos\\Computacao_grafica\\2025-1_Computacao_Grafica_GR86006\\common\\glad.c",
+  "file": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/common/glad.c",
+  "output": "CMakeFiles/HelloCube_M2.dir/common/glad.c.obj"
+},
+{
+  "directory": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/CuboTex_M3.dir/includes_CXX.rsp -g -std=gnu++17 -Wno-pragmas -o CMakeFiles\\CuboTex_M3.dir\\src\\CuboTex_M3.cpp.obj -c C:\\Users\\cassi\\OneDrive\\Documentos\\Desafios_Unisinos\\Computacao_grafica\\2025-1_Computacao_Grafica_GR86006\\src\\CuboTex_M3.cpp",
+  "file": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/src/CuboTex_M3.cpp",
+  "output": "CMakeFiles/CuboTex_M3.dir/src/CuboTex_M3.cpp.obj"
+},
+{
+  "directory": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/CuboTex_M3.dir/includes_C.rsp -g -Wno-pragmas -o CMakeFiles\\CuboTex_M3.dir\\common\\glad.c.obj -c C:\\Users\\cassi\\OneDrive\\Documentos\\Desafios_Unisinos\\Computacao_grafica\\2025-1_Computacao_Grafica_GR86006\\common\\glad.c",
+  "file": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/common/glad.c",
+  "output": "CMakeFiles/CuboTex_M3.dir/common/glad.c.obj"
+},
+{
+  "directory": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/CubosPhong_M4.dir/includes_CXX.rsp -g -std=gnu++17 -Wno-pragmas -o CMakeFiles\\CubosPhong_M4.dir\\src\\CubosPhong_M4.cpp.obj -c C:\\Users\\cassi\\OneDrive\\Documentos\\Desafios_Unisinos\\Computacao_grafica\\2025-1_Computacao_Grafica_GR86006\\src\\CubosPhong_M4.cpp",
+  "file": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/src/CubosPhong_M4.cpp",
+  "output": "CMakeFiles/CubosPhong_M4.dir/src/CubosPhong_M4.cpp.obj"
+},
+{
+  "directory": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/CubosPhong_M4.dir/includes_C.rsp -g -Wno-pragmas -o CMakeFiles\\CubosPhong_M4.dir\\common\\glad.c.obj -c C:\\Users\\cassi\\OneDrive\\Documentos\\Desafios_Unisinos\\Computacao_grafica\\2025-1_Computacao_Grafica_GR86006\\common\\glad.c",
+  "file": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/common/glad.c",
+  "output": "CMakeFiles/CubosPhong_M4.dir/common/glad.c.obj"
+},
+{
+  "directory": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/Camera_M5.dir/includes_CXX.rsp -g -std=gnu++17 -Wno-pragmas -o CMakeFiles\\Camera_M5.dir\\src\\Camera_M5.cpp.obj -c C:\\Users\\cassi\\OneDrive\\Documentos\\Desafios_Unisinos\\Computacao_grafica\\2025-1_Computacao_Grafica_GR86006\\src\\Camera_M5.cpp",
+  "file": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/src/Camera_M5.cpp",
+  "output": "CMakeFiles/Camera_M5.dir/src/Camera_M5.cpp.obj"
+},
+{
+  "directory": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/Camera_M5.dir/includes_C.rsp -g -Wno-pragmas -o CMakeFiles\\Camera_M5.dir\\common\\glad.c.obj -c C:\\Users\\cassi\\OneDrive\\Documentos\\Desafios_Unisinos\\Computacao_grafica\\2025-1_Computacao_Grafica_GR86006\\common\\glad.c",
+  "file": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/common/glad.c",
+  "output": "CMakeFiles/Camera_M5.dir/common/glad.c.obj"
+},
+{
+  "directory": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/Trajetoria_M6.dir/includes_CXX.rsp -g -std=gnu++17 -Wno-pragmas -o CMakeFiles\\Trajetoria_M6.dir\\src\\Trajetoria_M6.cpp.obj -c C:\\Users\\cassi\\OneDrive\\Documentos\\Desafios_Unisinos\\Computacao_grafica\\2025-1_Computacao_Grafica_GR86006\\src\\Trajetoria_M6.cpp",
+  "file": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/src/Trajetoria_M6.cpp",
+  "output": "CMakeFiles/Trajetoria_M6.dir/src/Trajetoria_M6.cpp.obj"
+},
+{
+  "directory": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/Trajetoria_M6.dir/includes_C.rsp -g -Wno-pragmas -o CMakeFiles\\Trajetoria_M6.dir\\common\\glad.c.obj -c C:\\Users\\cassi\\OneDrive\\Documentos\\Desafios_Unisinos\\Computacao_grafica\\2025-1_Computacao_Grafica_GR86006\\common\\glad.c",
+  "file": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/common/glad.c",
+  "output": "CMakeFiles/Trajetoria_M6.dir/common/glad.c.obj"
+},
+{
+  "directory": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/Cena_GB.dir/includes_CXX.rsp -g -std=gnu++17 -Wno-pragmas -o CMakeFiles\\Cena_GB.dir\\src\\Cena_GB.cpp.obj -c C:\\Users\\cassi\\OneDrive\\Documentos\\Desafios_Unisinos\\Computacao_grafica\\2025-1_Computacao_Grafica_GR86006\\src\\Cena_GB.cpp",
+  "file": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/src/Cena_GB.cpp",
+  "output": "CMakeFiles/Cena_GB.dir/src/Cena_GB.cpp.obj"
+},
+{
+  "directory": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/Cena_GB.dir/includes_C.rsp -g -Wno-pragmas -o CMakeFiles\\Cena_GB.dir\\common\\glad.c.obj -c C:\\Users\\cassi\\OneDrive\\Documentos\\Desafios_Unisinos\\Computacao_grafica\\2025-1_Computacao_Grafica_GR86006\\common\\glad.c",
+  "file": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/common/glad.c",
+  "output": "CMakeFiles/Cena_GB.dir/common/glad.c.obj"
+},
+{
+  "directory": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/buffer.dir/includes_CXX.rsp -g -std=gnu++17 -Wno-pragmas -o CMakeFiles\\buffer.dir\\src\\buffer.cpp.obj -c C:\\Users\\cassi\\OneDrive\\Documentos\\Desafios_Unisinos\\Computacao_grafica\\2025-1_Computacao_Grafica_GR86006\\src\\buffer.cpp",
+  "file": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/src/buffer.cpp",
+  "output": "CMakeFiles/buffer.dir/src/buffer.cpp.obj"
+},
+{
+  "directory": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/buffer.dir/includes_C.rsp -g -Wno-pragmas -o CMakeFiles\\buffer.dir\\common\\glad.c.obj -c C:\\Users\\cassi\\OneDrive\\Documentos\\Desafios_Unisinos\\Computacao_grafica\\2025-1_Computacao_Grafica_GR86006\\common\\glad.c",
+  "file": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/common/glad.c",
+  "output": "CMakeFiles/buffer.dir/common/glad.c.obj"
+},
+{
   "directory": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/_deps/glfw-build/src",
   "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\context.c.obj -c C:\\Users\\cassi\\OneDrive\\Documentos\\Desafios_Unisinos\\Computacao_grafica\\2025-1_Computacao_Grafica_GR86006\\build\\_deps\\glfw-src\\src\\context.c",
   "file": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/_deps/glfw-src/src/context.c",

@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\Trajetoria_M6.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\Trajetoria_M6.dir/objects.a @CMakeFiles\Trajetoria_M6.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Trajetoria_M6.dir/objects.a -Wl,--no-whole-archive -o Trajetoria_M6.exe -Wl,--out-implib,libTrajetoria_M6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Trajetoria_M6.dir\linkLibs.rsp

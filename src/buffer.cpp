@@ -67,6 +67,9 @@ bool firstMouse = true;
 float fov = 45.0f;
 bool isPaused = false;
 std::vector<Trajectory> trajectories;
+std::vector<glm::vec3> objectPositions;
+std::vector<glm::vec3> objectRotations;
+std::vector<float> objectScales;
 size_t selectedObject = 0;
 int highlightedObject = -1; 
 
@@ -148,7 +151,8 @@ int main() {
     std::vector<Model> models;
     models.push_back(loadModel("../assets/Modelos3D/CastleRuins.obj"));
     models.push_back(loadModel("../assets/Modelos3D/Pumpkin.obj")); 
-
+    models.push_back(loadModel("../assets/Modelos3D/Clouds.obj"));
+    
 
     glEnable(GL_DEPTH_TEST);
     glUseProgram(shaderID);
@@ -165,10 +169,11 @@ int main() {
     glUniform3f(glGetUniformLocation(shaderID, "lightPos"), 5.0f, 5.0f, 5.0f);
     glUniform3f(glGetUniformLocation(shaderID, "viewPos"), 0.0f, 0.0f, 10.0f);
 
-    std::vector<glm::vec3> objectPositions = {
+    objectPositions = {
     glm::vec3(0.0f),
     glm::vec3(5.0f, 6.0f, 5.0f),
-    };
+    glm::vec3(-3.0f, 0.0f, -3.0f) 
+};
 
 
     trajectories.resize(objectPositions.size());
@@ -176,6 +181,9 @@ int main() {
         trajectories[i].currentPos = objectPositions[i];
     }
 
+    objectPositions.resize(models.size(), glm::vec3(0.0f));
+    objectRotations.resize(models.size(), glm::vec3(0.0f));
+    objectScales.resize(models.size(), 1.0f);
 
     loadTrajectoriesFromTxt("../Trajectories/trajectories2.txt");
 
@@ -198,7 +206,7 @@ int main() {
         if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
             camera.ProcessKeyboard(Camera_Movement::RIGHT, deltaTime);
 
-        glClearColor(0, 0, 0, 1);
+        glClearColor(0.529f, 0.808f, 0.922f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)WIDTH / HEIGHT, 0.1f, 100.0f);
@@ -235,7 +243,10 @@ int main() {
 
             glm::mat4 modelMatrix = glm::mat4(1.0f);
             modelMatrix = glm::translate(modelMatrix, traj.currentPos + position);
-            modelMatrix = glm::scale(modelMatrix, glm::vec3(scale));
+            modelMatrix = glm::rotate(modelMatrix, objectRotations[i].x, glm::vec3(1,0,0));
+            modelMatrix = glm::rotate(modelMatrix, objectRotations[i].y, glm::vec3(0,1,0));
+            modelMatrix = glm::rotate(modelMatrix, objectRotations[i].z, glm::vec3(0,0,1));
+            modelMatrix = glm::scale(modelMatrix, glm::vec3(objectScales[i]));
             glm::mat3 normalMatrix = glm::transpose(glm::inverse(glm::mat3(modelMatrix)));
 
             glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(modelMatrix));
@@ -387,9 +398,7 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
         
         if (key == GLFW_KEY_KP_ADD || key == GLFW_KEY_EQUAL)  camera.MovementSpeed += 0.5f;
         if (key == GLFW_KEY_KP_SUBTRACT || key == GLFW_KEY_MINUS) camera.MovementSpeed -= 0.5f;
-        if (key == GLFW_KEY_LEFT_BRACKET) scale -= 0.05f;
-        if (key == GLFW_KEY_RIGHT_BRACKET) scale += 0.05f;
-        if (key == GLFW_KEY_R) scale = 1.0f;
+        
     }
     
     if (key == GLFW_KEY_SPACE && action == GLFW_PRESS) {
@@ -408,6 +417,27 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 
     if (key == GLFW_KEY_P && action == GLFW_PRESS)
     saveTrajectoriesToTxt("../Trajectories/trajectories.txt");
+
+    if (selectedObject != -1) {
+        float step = 0.05f;
+        float angleStep = glm::radians(5.0f);
+        float scaleStep = 0.05f;
+
+        // Rotação
+        if (glfwGetKey(window, GLFW_KEY_X) == GLFW_PRESS)
+            objectRotations[selectedObject].x += angleStep;
+        if (glfwGetKey(window, GLFW_KEY_Y) == GLFW_PRESS)
+            objectRotations[selectedObject].y += angleStep;
+        if (glfwGetKey(window, GLFW_KEY_Z) == GLFW_PRESS)
+            objectRotations[selectedObject].z += angleStep;
+
+        // Escala
+        if (glfwGetKey(window, GLFW_KEY_LEFT_BRACKET) == GLFW_PRESS)
+            objectScales[selectedObject] -= scaleStep;
+        if (glfwGetKey(window, GLFW_KEY_RIGHT_BRACKET) == GLFW_PRESS)
+            objectScales[selectedObject] += scaleStep;
+        }
+
 }
 
 void mouse_callback(GLFWwindow* window, double xpos, double ypos) {

@@ -1,0 +1,13 @@
+# === Câmera ===
+# formato: camera <cameraStartPosition> <cameraYaw> <cameraPitch> <cameraNear> <cameraFar>
+camera -8.2 1.9 14.9 -54.4 4.6 0.1 100.0
+
+# === Luz ===
+light 3.0 10.0 10.0
+
+# === Objetos ===
+# formato: object <.obj> <pos> <rot> <escala> <trajetoria.txt|none>
+
+object Clouds.obj 0 15 0 0 0 0 1.0 none
+object Pumpkin.obj 0 0.5 9.5 0 0 0 1.0 none
+object CastleRuins.obj 0 0 0 0 0 0 0.8 trajectories.txt

@@ -1,4 +1,4 @@
-// Trajetória - Cassio
+// Cena - Cassio
 
 #include "Camera.h"
 #define STB_IMAGE_IMPLEMENTATION
@@ -31,7 +31,7 @@ struct Model {
 struct Trajectory {
     std::vector<glm::vec3> controlPoints;
     size_t currentIndex = 0;
-    float moveSpeed = 1.0f;
+    float moveSpeed = 10.0f;
     glm::vec3 currentPos = glm::vec3(0.0f);
 };
 
@@ -45,9 +45,10 @@ void saveTrajectoriesToTxt(const std::string& path);
 void mouse_button_callback(GLFWwindow* window, int button, int action, int mods);
 int intersectedObjectIndex(const glm::vec3& rayOrigin, const glm::vec3& rayDir);
 glm::vec3 calculateRayDirection(const glm::mat4& projection, const glm::mat4& view);
+void loadSceneConfig(const std::string& path);
 int setupShader();
 
-const GLuint WIDTH = 1000, HEIGHT = 1000;
+const GLuint WIDTH = 1920, HEIGHT = 1080;
 bool rotateX = false, rotateY = false, rotateZ = false;
 glm::vec3 position(0.0f);
 float scale = 1.0f;
@@ -58,7 +59,7 @@ size_t vertexCount = 0;
 glm::vec3 ka(0.2f), kd(0.8f), ks(1.0f);
 float shininess = 32.0f;
 
-Camera camera(glm::vec3(0.0f, 0.0f, 10.0f), glm::vec3(0.0f, 1.0f, 0.0f), -90.0f, 0.0f);
+Camera camera(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f), -90.0f, 0.0f);
 float deltaTime = 0.0f;        
 float animationDelta = 0.0f;   
 float lastFrame = 0.0f;
@@ -72,6 +73,12 @@ std::vector<glm::vec3> objectRotations;
 std::vector<float> objectScales;
 size_t selectedObject = 0;
 int highlightedObject = -1; 
+std::vector<Model> models;
+
+glm::vec3 lightPosition;
+float cameraYaw, cameraPitch;
+float cameraNear, cameraFar;
+glm::vec3 cameraStartPosition;
 
 const GLchar* vertexShaderSource = R"(
 #version 450
@@ -131,11 +138,9 @@ void main() {
 }
 )";
 
-
-
 int main() {
     glfwInit();
-    GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "Textured Cube - Track", nullptr, nullptr);
+    GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "Castle Scene", nullptr, nullptr);
     glfwMakeContextCurrent(window);
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
     lastX = WIDTH / 2.0f;
@@ -148,11 +153,10 @@ int main() {
     gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 
     GLuint shaderID = setupShader();
-    std::vector<Model> models;
-    models.push_back(loadModel("../assets/Modelos3D/Cube.obj"));
-    models.push_back(loadModel("../assets/Modelos3D/Pumpkin.obj")); 
-    models.push_back(loadModel("../assets/Modelos3D/Clouds.obj"));
     
+    loadSceneConfig("../Cenas/config.txt");
+
+    camera = Camera(cameraStartPosition, glm::vec3(0.0f, 1.0f, 0.0f), cameraYaw, cameraPitch);
 
     glEnable(GL_DEPTH_TEST);
     glUseProgram(shaderID);
@@ -166,15 +170,8 @@ int main() {
     glUniform3fv(glGetUniformLocation(shaderID, "kd"), 1, glm::value_ptr(kd));
     glUniform3fv(glGetUniformLocation(shaderID, "ks"), 1, glm::value_ptr(ks));
     glUniform1f(glGetUniformLocation(shaderID, "shininess"), shininess);
-    glUniform3f(glGetUniformLocation(shaderID, "lightPos"), 5.0f, 5.0f, 5.0f);
-    glUniform3f(glGetUniformLocation(shaderID, "viewPos"), 0.0f, 0.0f, 10.0f);
-
-    objectPositions = {
-    glm::vec3(0.0f),
-    glm::vec3(5.0f, 6.0f, 5.0f),
-    glm::vec3(-3.0f, 0.0f, -3.0f) 
-};
-
+    glUniform3fv(glGetUniformLocation(shaderID, "lightPos"), 1, glm::value_ptr(lightPosition));
+    glUniform3fv(glGetUniformLocation(shaderID, "viewPos"), 1, glm::value_ptr(cameraStartPosition));
 
     trajectories.resize(objectPositions.size());
     for (size_t i = 0; i < objectPositions.size(); ++i) {
@@ -184,8 +181,6 @@ int main() {
     objectPositions.resize(models.size(), glm::vec3(0.0f));
     objectRotations.resize(models.size(), glm::vec3(0.0f));
     objectScales.resize(models.size(), 1.0f);
-
-    loadTrajectoriesFromTxt("../Trajectories/trajectories.txt");
 
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -209,7 +204,7 @@ int main() {
         glClearColor(0.529f, 0.808f, 0.922f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)WIDTH / HEIGHT, 0.1f, 100.0f);
+        glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)WIDTH / HEIGHT, cameraNear, cameraFar);
         glm::mat4 view = camera.GetViewMatrix();
 
         glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
@@ -281,7 +276,6 @@ int main() {
                 glUniform1f(glGetUniformLocation(shaderID, "shininess"), model.shininess);
             }
         }   
-  
 
         glBindVertexArray(0);
         glfwSwapBuffers(window);
@@ -390,6 +384,44 @@ Model loadModel(const std::string& objPath) {
     return model;
 }
 
+void loadSceneConfig(const std::string& path) {
+
+    std::ifstream file(path);
+    if (!file.is_open()) {
+        std::cerr << "Erro ao abrir arquivo de configuração: " << path << "\n";
+        return;
+    }
+
+    std::string line;
+    while (std::getline(file, line)) {
+        if (line.empty() || line[0] == '#') continue;
+
+        std::istringstream iss(line);
+        std::string keyword;
+        iss >> keyword;
+
+        if (keyword == "camera") {
+            iss >> cameraStartPosition.x >> cameraStartPosition.y >> cameraStartPosition.z >> cameraYaw >> cameraPitch 
+            >> cameraNear >> cameraFar;
+        } else if (keyword == "light") {
+            iss >> lightPosition.x >> lightPosition.y >> lightPosition.z;
+        } else if (keyword == "object") {
+            std::string objName, trajFile;
+            glm::vec3 pos, rot;
+            float scale;
+            iss >> objName >> pos.x >> pos.y >> pos.z >> rot.x >> rot.y >> rot.z >> scale >> trajFile;
+
+            models.push_back(loadModel(std::string("../assets/Modelos3d/") += objName));
+            objectPositions.push_back(pos);
+            objectRotations.push_back(rot);
+            objectScales.push_back(scale);
+            loadTrajectoriesFromTxt(std::string("../Trajectories/") += trajFile);
+        }
+    }
+
+    file.close();
+}
+
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods) {
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
         glfwSetWindowShouldClose(window, GL_TRUE);
@@ -406,18 +438,14 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     std::cout << (isPaused ? "Animação pausada.\n" : "Animação retomada.\n");
     }
 
-    if (key == GLFW_KEY_T && action == GLFW_PRESS) {
-        glm::vec3 current = camera.Position;
-        trajectories[selectedObject].controlPoints.push_back(current);
-        std::cout << "Ponto adicionado para objeto " << selectedObject << ": (" << current.x << ", " << current.y << ", " << current.z << ")\n";
+    if (key == GLFW_KEY_C && action == GLFW_PRESS) {
+    glm::vec3 pos = camera.Position;
+    std::cout << "Posição atual da câmera: ("<< pos.x << ", " << pos.y << ", " << pos.z << ")\n";
+    std::cout << "Yaw: " << camera.Yaw << "°, Pitch: " << camera.Pitch << "°\n";
     }
 
-    if (key == GLFW_KEY_L && action == GLFW_PRESS)
-    loadTrajectoriesFromTxt("../Trajectories/trajectories.txt");
 
-    if (key == GLFW_KEY_P && action == GLFW_PRESS)
-    saveTrajectoriesToTxt("../Trajectories/trajectories.txt");
-
+    
     if (selectedObject != -1) {
         float step = 0.05f;
         float angleStep = glm::radians(5.0f);
@@ -494,37 +522,15 @@ void loadTrajectoriesFromTxt(const std::string& path) {
     trajectories.resize(4); 
 
     while (std::getline(file, line)) {
-        if (line.empty()) continue;
-        if (line[0] == '#') {
-            sscanf(line.c_str(), "# Objeto %zu", &currentObject);
-            if (currentObject >= trajectories.size())
-                trajectories.resize(currentObject + 1);
-        } else {
-            float x, y, z;
-            if (sscanf(line.c_str(), "%f %f %f", &x, &y, &z) == 3) {
-                trajectories[currentObject].controlPoints.emplace_back(x, y, z);
-            }
+        if (line.empty() || line[0] == '#') continue;
+        float x, y, z;
+        if (sscanf(line.c_str(), "%f %f %f", &x, &y, &z) == 3) {
+            trajectories[currentObject].controlPoints.emplace_back(x, y, z);
         }
     }
+    file.close();
 
     std::cout << "Trajetórias carregadas de " << path << "\n";
-}
-
-void saveTrajectoriesToTxt(const std::string& path) {
-    std::ofstream file(path);
-    if (!file.is_open()) {
-        std::cerr << "Erro ao abrir " << path << " para escrita.\n";
-        return;
-    }
-
-    for (size_t i = 0; i < trajectories.size(); ++i) {
-        file << "# Objeto " << i << "\n";
-        for (const auto& p : trajectories[i].controlPoints)
-            file << p.x << " " << p.y << " " << p.z << "\n";
-        file << "\n";
-    }
-
-    std::cout << "Trajetórias salvas em " << path << "\n";
 }
 
 glm::vec3 calculateRayDirection(const glm::mat4& projection, const glm::mat4& view) {

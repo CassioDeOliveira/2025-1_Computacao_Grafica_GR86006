@@ -173,7 +173,7 @@ int main() {
     glm::vec3(0.0f),
     glm::vec3(5.0f, 6.0f, 5.0f),
     glm::vec3(-3.0f, 0.0f, -3.0f) 
-};
+    };
 
 
     trajectories.resize(objectPositions.size());
@@ -185,7 +185,7 @@ int main() {
     objectRotations.resize(models.size(), glm::vec3(0.0f));
     objectScales.resize(models.size(), 1.0f);
 
-    loadTrajectoriesFromTxt("../Trajectories/trajectories2.txt");
+    loadTrajectoriesFromTxt("../Trajectories/trajectories.txt");
 
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);

@@ -97,15 +97,15 @@
 },
 {
   "directory": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/Cena_GB.dir/includes_CXX.rsp -g -std=gnu++17 -Wno-pragmas -o CMakeFiles\\Cena_GB.dir\\src\\Cena_GB.cpp.obj -c C:\\Users\\cassi\\OneDrive\\Documentos\\Desafios_Unisinos\\Computacao_grafica\\2025-1_Computacao_Grafica_GR86006\\src\\Cena_GB.cpp",
-  "file": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/src/Cena_GB.cpp",
-  "output": "CMakeFiles/Cena_GB.dir/src/Cena_GB.cpp.obj"
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/Cena_Castle.dir/includes_CXX.rsp -g -std=gnu++17 -Wno-pragmas -o CMakeFiles\\Cena_Castle.dir\\src\\Cena_Castle.cpp.obj -c C:\\Users\\cassi\\OneDrive\\Documentos\\Desafios_Unisinos\\Computacao_grafica\\2025-1_Computacao_Grafica_GR86006\\src\\Cena_Castle.cpp",
+  "file": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/src/Cena_Castle.cpp",
+  "output": "CMakeFiles/Cena_Castle.dir/src/Cena_Castle.cpp.obj"
 },
 {
   "directory": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/Cena_GB.dir/includes_C.rsp -g -Wno-pragmas -o CMakeFiles\\Cena_GB.dir\\common\\glad.c.obj -c C:\\Users\\cassi\\OneDrive\\Documentos\\Desafios_Unisinos\\Computacao_grafica\\2025-1_Computacao_Grafica_GR86006\\common\\glad.c",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/Cena_Castle.dir/includes_C.rsp -g -Wno-pragmas -o CMakeFiles\\Cena_Castle.dir\\common\\glad.c.obj -c C:\\Users\\cassi\\OneDrive\\Documentos\\Desafios_Unisinos\\Computacao_grafica\\2025-1_Computacao_Grafica_GR86006\\common\\glad.c",
   "file": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/common/glad.c",
-  "output": "CMakeFiles/Cena_GB.dir/common/glad.c.obj"
+  "output": "CMakeFiles/Cena_Castle.dir/common/glad.c.obj"
 },
 {
   "directory": "C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build",

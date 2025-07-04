@@ -104,7 +104,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/CubosPhong_M4.dir/DependInfo.cmake"
   "CMakeFiles/Camera_M5.dir/DependInfo.cmake"
   "CMakeFiles/Trajetoria_M6.dir/DependInfo.cmake"
-  "CMakeFiles/Cena_GB.dir/DependInfo.cmake"
+  "CMakeFiles/Cena_Castle.dir/DependInfo.cmake"
   "CMakeFiles/buffer.dir/DependInfo.cmake"
   "_deps/glfw-build/CMakeFiles/uninstall.dir/DependInfo.cmake"
   "_deps/glfw-build/src/CMakeFiles/glfw.dir/DependInfo.cmake"

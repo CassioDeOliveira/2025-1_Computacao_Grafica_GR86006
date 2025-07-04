@@ -265,17 +265,17 @@ Trajetoria_M6/fast:
 .PHONY : Trajetoria_M6/fast
 
 #=============================================================================
-# Target rules for targets named Cena_GB
+# Target rules for targets named Cena_Castle
 
 # Build rule for target.
-Cena_GB: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Cena_GB
-.PHONY : Cena_GB
+Cena_Castle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Cena_Castle
+.PHONY : Cena_Castle
 
 # fast build rule for target.
-Cena_GB/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_GB.dir\build.make CMakeFiles/Cena_GB.dir/build
-.PHONY : Cena_GB/fast
+Cena_Castle/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_Castle.dir\build.make CMakeFiles/Cena_Castle.dir/build
+.PHONY : Cena_Castle/fast
 
 #=============================================================================
 # Target rules for targets named buffer
@@ -355,7 +355,7 @@ common/glad.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CubosPhong_M4.dir\build.make CMakeFiles/CubosPhong_M4.dir/common/glad.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Camera_M5.dir\build.make CMakeFiles/Camera_M5.dir/common/glad.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trajetoria_M6.dir\build.make CMakeFiles/Trajetoria_M6.dir/common/glad.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_GB.dir\build.make CMakeFiles/Cena_GB.dir/common/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_Castle.dir\build.make CMakeFiles/Cena_Castle.dir/common/glad.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\buffer.dir\build.make CMakeFiles/buffer.dir/common/glad.c.obj
 .PHONY : common/glad.c.obj
 
@@ -372,7 +372,7 @@ common/glad.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CubosPhong_M4.dir\build.make CMakeFiles/CubosPhong_M4.dir/common/glad.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Camera_M5.dir\build.make CMakeFiles/Camera_M5.dir/common/glad.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trajetoria_M6.dir\build.make CMakeFiles/Trajetoria_M6.dir/common/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_GB.dir\build.make CMakeFiles/Cena_GB.dir/common/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_Castle.dir\build.make CMakeFiles/Cena_Castle.dir/common/glad.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\buffer.dir\build.make CMakeFiles/buffer.dir/common/glad.c.i
 .PHONY : common/glad.c.i
 
@@ -389,7 +389,7 @@ common/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CubosPhong_M4.dir\build.make CMakeFiles/CubosPhong_M4.dir/common/glad.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Camera_M5.dir\build.make CMakeFiles/Camera_M5.dir/common/glad.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trajetoria_M6.dir\build.make CMakeFiles/Trajetoria_M6.dir/common/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_GB.dir\build.make CMakeFiles/Cena_GB.dir/common/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_Castle.dir\build.make CMakeFiles/Cena_Castle.dir/common/glad.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\buffer.dir\build.make CMakeFiles/buffer.dir/common/glad.c.s
 .PHONY : common/glad.c.s
 
@@ -417,29 +417,29 @@ src/Camera_M5.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Camera_M5.dir\build.make CMakeFiles/Camera_M5.dir/src/Camera_M5.cpp.s
 .PHONY : src/Camera_M5.cpp.s
 
-src/Cena_GB.obj: src/Cena_GB.cpp.obj
-.PHONY : src/Cena_GB.obj
+src/Cena_Castle.obj: src/Cena_Castle.cpp.obj
+.PHONY : src/Cena_Castle.obj
 
 # target to build an object file
-src/Cena_GB.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_GB.dir\build.make CMakeFiles/Cena_GB.dir/src/Cena_GB.cpp.obj
-.PHONY : src/Cena_GB.cpp.obj
+src/Cena_Castle.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_Castle.dir\build.make CMakeFiles/Cena_Castle.dir/src/Cena_Castle.cpp.obj
+.PHONY : src/Cena_Castle.cpp.obj
 
-src/Cena_GB.i: src/Cena_GB.cpp.i
-.PHONY : src/Cena_GB.i
+src/Cena_Castle.i: src/Cena_Castle.cpp.i
+.PHONY : src/Cena_Castle.i
 
 # target to preprocess a source file
-src/Cena_GB.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_GB.dir\build.make CMakeFiles/Cena_GB.dir/src/Cena_GB.cpp.i
-.PHONY : src/Cena_GB.cpp.i
+src/Cena_Castle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_Castle.dir\build.make CMakeFiles/Cena_Castle.dir/src/Cena_Castle.cpp.i
+.PHONY : src/Cena_Castle.cpp.i
 
-src/Cena_GB.s: src/Cena_GB.cpp.s
-.PHONY : src/Cena_GB.s
+src/Cena_Castle.s: src/Cena_Castle.cpp.s
+.PHONY : src/Cena_Castle.s
 
 # target to generate assembly for a file
-src/Cena_GB.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_GB.dir\build.make CMakeFiles/Cena_GB.dir/src/Cena_GB.cpp.s
-.PHONY : src/Cena_GB.cpp.s
+src/Cena_Castle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cena_Castle.dir\build.make CMakeFiles/Cena_Castle.dir/src/Cena_Castle.cpp.s
+.PHONY : src/Cena_Castle.cpp.s
 
 src/CuboTex_M3.obj: src/CuboTex_M3.cpp.obj
 .PHONY : src/CuboTex_M3.obj
@@ -648,7 +648,7 @@ help:
 	@echo ... uninstall
 	@echo ... update_mappings
 	@echo ... Camera_M5
-	@echo ... Cena_GB
+	@echo ... Cena_Castle
 	@echo ... CuboTex_M3
 	@echo ... CubosPhong_M4
 	@echo ... Hello3D
@@ -665,9 +665,9 @@ help:
 	@echo ... src/Camera_M5.obj
 	@echo ... src/Camera_M5.i
 	@echo ... src/Camera_M5.s
-	@echo ... src/Cena_GB.obj
-	@echo ... src/Cena_GB.i
-	@echo ... src/Cena_GB.s
+	@echo ... src/Cena_Castle.obj
+	@echo ... src/Cena_Castle.i
+	@echo ... src/Cena_Castle.s
 	@echo ... src/CuboTex_M3.obj
 	@echo ... src/CuboTex_M3.i
 	@echo ... src/CuboTex_M3.s

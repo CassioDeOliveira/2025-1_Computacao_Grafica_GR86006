@@ -6,7 +6,7 @@ C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_C
 C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/CMakeFiles/CubosPhong_M4.dir
 C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/CMakeFiles/Camera_M5.dir
 C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/CMakeFiles/Trajetoria_M6.dir
-C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/CMakeFiles/Cena_GB.dir
+C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/CMakeFiles/Cena_Castle.dir
 C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/CMakeFiles/buffer.dir
 C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/CMakeFiles/edit_cache.dir
 C:/Users/cassi/OneDrive/Documentos/Desafios_Unisinos/Computacao_grafica/2025-1_Computacao_Grafica_GR86006/build/CMakeFiles/rebuild_cache.dir

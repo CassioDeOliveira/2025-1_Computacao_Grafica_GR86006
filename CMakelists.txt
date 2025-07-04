@@ -52,7 +52,7 @@ set(EXERCISES
     CubosPhong_M4
     Camera_M5
     Trajetoria_M6
-    Cena_GB
+    Cena_Castle
     buffer
 )
 
